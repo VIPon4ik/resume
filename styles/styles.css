@@ -1,0 +1,162 @@
+:root {
+  --background-color: #F4F4F4;
+  --main-color: #373741;
+  --second-color: #E1D8CF;
+}
+
+/**
+  |============================
+  | BASIC STYLES
+  |============================
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: var(--main-color);
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 460px 740px;
+  grid-template-areas: "aside main";
+  background-color: var(--background-color);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+aside {
+  grid-area: aside;
+  background-color: var(--second-color);
+}
+
+ul,li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,h2,h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--second-color);
+}
+
+h3 {
+  color: var(--main-color);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--main-color);
+
+  font-weight: 800;
+  text-decoration-line: underline;
+
+}
+
+section {
+  padding-top: 20px;
+  padding-left: 46px;
+  padding-right: 120px;
+}
+
+.title-container {
+  display: flex;
+  width: 456px;
+  padding: 8px 20px;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--main-color);
+  margin-bottom: 16px;
+}
+
+/**
+  |============================
+  | MAIN SECTION STYLES
+  |============================
+*/
+
+
+/* Hero section */
+.container {
+  padding: 60px 60px 20px 48px;
+}
+
+.hero-section {
+  background-color: var(--main-color);
+  padding: 0;
+}
+
+.hero-title {
+  font-size: 32px;
+  color: var(--second-color);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.hero-position {
+  color: var(--second-color);
+  text-align: center;
+  margin-bottom: 24px;
+}
+.hero-text-title {
+  color: var(--second-color);
+  margin-bottom: 16px;
+}
+.hero-text {
+  color: var(--second-color);
+}
+.projects-section {
+}
+.projecects-section-title {
+}
+.projects-list {
+}
+.project-link {
+}
+.project-text:not(:last-child) {
+  margin-bottom: 16px;
+}
+.work-section {
+}
+.work-section-title {
+}
+.work-position {
+}
+.work-period {
+  margin-bottom: 20px;
+}
+
+.work-section-list li {
+  
+}
+
+.work-section-list li::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  position: absolute;
+}
+.work-responsobilities-text {
+}
+.education-section {
+}
+.education-title {
+}
+.eductaion-item {
+}
