@@ -132,9 +132,13 @@ svg {
 .hero-text {
   color: var(--second-color);
 }
-.project-text:not(:last-child) {
+.projects-list li:not(:last-child) {
   margin-bottom: 16px;
 }
+.project-text {
+  font-size: 14px;
+}
+
 .work-period {
   margin-bottom: 20px;
 }
@@ -222,8 +226,8 @@ svg {
   transform-origin: center;
 }
 
-.contact-link-text:hover::after,
-.contact-link-text:active::after {
+.contact-link:hover .contact-link-text::after,
+.contact-link:active .contact-link-text::after {
   transform: scale(1);
 }
 
@@ -241,7 +245,7 @@ svg {
   text-indent: 26px;
 }
 
-.aside-language-list {
+.aside-list {
   display: flex;
   flex-direction: column;
 }
