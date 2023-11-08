@@ -32,7 +32,7 @@ main {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 
-  box-shadow: 1px 2px 3px 1px rgba(0,0,0, 0.2);
+  box-shadow: 1px 1px 4px 4px rgba(0,0,0, 0.2);
 }
 
 aside {
@@ -78,13 +78,13 @@ a {
 .section {
   padding-top: 20px;
   padding-left: 46px;
-  padding-right: 240px;
+  padding-right: 196px;
 }
 
 .title-container,
 .aside-title {
   display: flex;
-  width: 456px;
+  width: 500px;
   padding: 8px 20px;
   align-items: center;
   gap: 8px;
