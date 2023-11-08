@@ -28,11 +28,17 @@ main {
   background-color: var(--background-color);
   width: 1200px;
   margin: 0 auto;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  box-shadow: 1px 2px 3px 1px rgba(0,0,0, 0.2);
 }
 
 aside {
   grid-area: aside;
   background-color: var(--second-color);
+  border-bottom-left-radius: 10px;
 }
 
 ul,li {
@@ -69,13 +75,14 @@ a {
 
 }
 
-section {
+.section {
   padding-top: 20px;
   padding-left: 46px;
-  padding-right: 120px;
+  padding-right: 240px;
 }
 
-.title-container {
+.title-container,
+.aside-title {
   display: flex;
   width: 456px;
   padding: 8px 20px;
@@ -83,6 +90,11 @@ section {
   gap: 8px;
   background-color: var(--main-color);
   margin-bottom: 16px;
+}
+
+svg {
+  width: 28px;
+  height: 28px;
 }
 
 /**
@@ -120,43 +132,116 @@ section {
 .hero-text {
   color: var(--second-color);
 }
-.projects-section {
-}
-.projecects-section-title {
-}
-.projects-list {
-}
-.project-link {
-}
 .project-text:not(:last-child) {
   margin-bottom: 16px;
-}
-.work-section {
-}
-.work-section-title {
-}
-.work-position {
 }
 .work-period {
   margin-bottom: 20px;
 }
-
-.work-section-list li {
-  
+.work-section-list li,
+.aside-skills-list li {
+  position: relative;
 }
-
-.work-section-list li::before {
+.work-section-list li::before,
+.aside-skills-list li::before {
   content: " ";
   width: 10px;
   height: 10px;
+  border-radius: 50%;
   background-color: var(--main-color);
+
   position: absolute;
+  top: 10px;
 }
 .work-responsobilities-text {
+  text-indent: 16px;
 }
-.education-section {
+
+/**
+  |============================
+  | ASIDE SECTION
+  |============================
+*/
+
+.aside-section {
+  padding: 80px 60px;
 }
-.education-title {
+
+.avatar {
+  object-fit: cover;
+  object-position: 0px 0px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
-.eductaion-item {
+
+.aside-title {
+  width: 340px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 20px;
+  margin-bottom: 20px;
+  
+  gap: 8px;
+}
+
+.contact-link {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+
+  text-decoration: none;
+}
+
+.contact-link-text {
+  position: relative;
+}
+
+.contact-link-text::after {
+  content: " ";
+  width: 100%;
+
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  height: 2px;
+  opacity: 0.7;
+  background-color: var(--main-color);
+
+  transition: all 0.25s ease-in-out;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.contact-link-text:hover::after,
+.contact-link-text:active::after {
+  transform: scale(1);
+}
+
+.aside-skills-list {
+  margin-left: 20px;
+
+  display: grid;
+  grid-template-columns: 160px 160px;
+  row-gap: 4px;
+
+  margin-bottom: 20px;
+}
+
+.aside-list-text {
+  text-indent: 26px;
+}
+
+.aside-language-list {
+  display: flex;
+  flex-direction: column;
 }

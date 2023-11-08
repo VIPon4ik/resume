@@ -21,60 +21,182 @@
     </head>
     <body>
         <main>
-            <aside>
-                <img class="avatar" alt="My photo" src="" />
+            <aside class="aside-section">
+                <img
+                    class="avatar"
+                    src="./img/resume.jpg"
+                    alt="My photo"
+                    src=""
+                    width="300"
+                    height="300"
+                />
 
                 <section class="aside-contacts-section">
-                    <h2>Contacts</h2>
+                    <h2 class="aside-title">Contacts</h2>
 
                     <ul class="contacts-list">
-                        <li><a class="contact-text">+38 095 124 00 44</a></li>
-                        <li><a class="contact-text">umniyd@gmail.com</a></li>
-                        <li><a class="contact-text">GitHub</a></li>
-                        <li><a class="contact-text">Telegram</a></li>
-                        <li><p class="contact-text">Kyiv, Ukraine</p></li>
+                        <li>
+                            <a class="contact-link">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="29"
+                                    height="28"
+                                    viewBox="0 0 29 28"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M27.3889 19.4444C25.375 19.4444 23.4417 19.1333 21.6372 18.5578C21.4761 18.5111 21.2989 18.48 21.1378 18.48C20.7189 18.48 20.3161 18.6356 19.9939 18.9311L16.4494 22.3533C11.89 20.1133 8.15222 16.52 5.83222 12.1022L9.37667 8.66444C9.82778 8.26 9.95667 7.65333 9.77944 7.10889C9.18333 5.36667 8.86111 3.5 8.86111 1.55556C8.86111 0.7 8.13611 0 7.25 0H1.61111C0.725 0 0 0.7 0 1.55556C0 16.1622 12.2606 28 27.3889 28C28.275 28 29 27.3 29 26.4444V21C29 20.1444 28.275 19.4444 27.3889 19.4444ZM3.27056 3.11111H5.68722C5.8 4.48 6.04167 5.83333 6.41222 7.12444L4.47889 9.00667C3.83444 7.12444 3.41556 5.16444 3.27056 3.11111ZM25.7778 24.8422C23.6511 24.7022 21.5889 24.2978 19.6556 23.66L21.5889 21.7933C22.9583 22.1667 24.36 22.4 25.7778 22.4933V24.8422Z"
+                                        fill="#373741"
+                                    />
+                                </svg>
+                                <span class="contact-link-text"
+                                    >+38 095 124 00 44</span
+                                >
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-link">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 28 28"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M14.3256 11.4459V16.8568H22.0085C21.2935 20.2952 18.3002 22.2708 14.3256 22.2708C9.69624 22.2085 5.97682 18.5207 5.97682 13.993C5.97682 9.46528 9.69624 5.77748 14.3256 5.71517C16.2499 5.71292 18.1149 6.36597 19.6004 7.56218L23.7689 3.48559C18.9873 -0.625381 12.0041 -1.15413 6.63239 2.18805C1.26069 5.53024 -1.2085 11.9401 0.573105 17.9177C2.35471 23.8952 7.95893 28.0038 14.3256 28C21.4875 28 28 22.9058 28 13.9922C27.9889 13.134 27.8814 12.2796 27.6793 11.4443L14.3256 11.4459Z"
+                                        fill="#373741"
+                                    />
+                                </svg>
+                                <span class="contact-link-text"
+                                    >umniyd@gmail.com</span
+                                >
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-link">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="33"
+                                    height="32"
+                                    viewBox="0 0 33 32"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M0 21.9865C2.43463 26.0652 6.28046 29.204 10.8637 30.7299C11.8644 30.9129 12.229 30.2953 12.229 29.7649C12.229 29.5453 12.2254 29.1573 12.2204 28.6381C12.2147 28.0367 12.2073 27.2594 12.202 26.3639C6.63894 27.5721 5.46518 23.6824 5.46518 23.6824C4.55539 21.373 3.24411 20.7578 3.24411 20.7578C1.42822 19.5166 3.38163 19.5411 3.38163 19.5411C5.38905 19.6835 6.44495 21.6026 6.44495 21.6026C8.22892 24.6585 11.1265 23.7757 12.2659 23.265C12.4476 21.9721 12.9633 21.0906 13.5354 20.5909C9.09451 20.0862 4.42524 18.3698 4.42524 10.706C4.42524 8.52297 5.20489 6.73777 6.48424 5.33933C6.27797 4.83348 5.59164 2.80027 6.67946 0.0463454C6.67946 0.0463454 8.35907 -0.491424 12.1799 2.09675C13.7748 1.65352 15.4864 1.43129 17.1868 1.42392C18.8849 1.43129 20.5964 1.65352 22.1937 2.09675C26.0122 -0.491424 27.6881 0.0463454 27.6881 0.0463454C28.7796 2.80027 28.0932 4.83348 27.887 5.33933C29.1688 6.73777 29.9435 8.52297 29.9435 10.706C29.9435 18.3895 25.2669 20.0801 20.8113 20.5749C21.5295 21.1925 22.1692 22.4129 22.1692 24.2791C22.1692 26.0667 22.1582 27.6236 22.1509 28.655C22.1473 29.1658 22.1446 29.5477 22.1446 29.7649C22.1446 30.3002 22.5044 30.9227 23.5197 30.7275C27.1709 29.5087 30.3536 27.2669 32.7268 24.3418C29.0599 28.8623 23.4605 31.7514 17.1862 31.7514C9.88086 31.7514 3.4903 27.8346 0 21.9865Z"
+                                        fill="#373741"
+                                    />
+                                </svg>
+                                <span class="contact-link-text">GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-link">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="24"
+                                    viewBox="0 0 28 24"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M27.9765 2.48587C28.1947 1.16259 26.8545 0.118124 25.6011 0.634707L0.638431 10.9237C-0.26035 11.2941 -0.194607 12.5721 0.737567 12.8508L5.88551 14.3898C6.86802 14.6835 7.93192 14.5317 8.78988 13.9752L20.3962 6.44759C20.7462 6.22059 21.1277 6.68776 20.8287 6.97718L12.4742 15.0633C11.6638 15.8478 11.8246 17.1769 12.7994 17.7508L22.1532 23.2573C23.2023 23.875 24.5519 23.2545 24.7482 22.0644L27.9765 2.48587Z"
+                                        fill="#373741"
+                                    />
+                                </svg>
+                                <span class="contact-link-text"
+                                    >Telegram</span
+                                >
+                                </a
+                            >
+                        </li>
+                        <li>
+                            <a class="contact-link">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 28 28"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M15.5555 28H9.33331V9.33333H15.5555V12.4444C16.8818 10.7571 18.8932 9.75111 21.0388 9.702C24.8975 9.72342 28.0111 12.8635 28 16.7222V28H21.7777V17.5C21.5289 15.7619 20.0383 14.4722 18.2824 14.476C17.5144 14.5003 16.7895 14.8365 16.2749 15.4072C15.7603 15.9778 15.5005 16.7336 15.5555 17.5V28ZM6.22221 28H0V9.33333H6.22221V28ZM3.1111 6.22222C1.39289 6.22222 0 4.82933 0 3.11111C0 1.39289 1.39289 0 3.1111 0C4.82932 0 6.22221 1.39289 6.22221 3.11111C6.22221 3.93623 5.89443 4.72755 5.31099 5.311C4.72754 5.89445 3.93622 6.22222 3.1111 6.22222Z"
+                                        fill="#373741"
+                                    />
+                                </svg>
+                                <span class="contact-link-text"
+                                    >LinkedIn</span
+                                ></a
+                            >
+                        </li>
+                        <li>
+                            <p class="contact-link">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="22"
+                                    height="28"
+                                    viewBox="0 0 22 28"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M10.9999 28C9.01514 26.3244 7.1754 24.4875 5.49997 22.5085C2.9857 19.5364 1.38861e-06 15.1102 1.38861e-06 10.8924C-0.00222714 6.48729 2.67809 2.51497 6.79022 0.829111C10.9023 -0.856753 15.6357 0.0761331 18.7816 3.19245C20.8503 5.23075 22.0092 8.0034 21.9999 10.8924C21.9999 15.1102 19.0142 19.5364 16.4999 22.5085C14.8245 24.4875 12.9848 26.3244 10.9999 28ZM10.9999 3.11624C6.66274 3.12138 3.14804 6.59989 3.14284 10.8924C3.14284 12.7058 3.97098 15.8458 7.91211 20.5131C8.88346 21.6609 9.91412 22.7583 10.9999 23.8009C12.0859 22.7596 13.117 21.6638 14.0894 20.5178C18.0289 15.8443 18.857 12.7043 18.857 10.8924C18.8519 6.59989 15.3372 3.12138 10.9999 3.11624ZM10.9999 15.5581C8.39633 15.5581 6.28569 13.4692 6.28569 10.8924C6.28569 8.31562 8.39633 6.22671 10.9999 6.22671C13.6036 6.22671 15.7142 8.31562 15.7142 10.8924C15.7142 12.1298 15.2175 13.3166 14.3334 14.1916C13.4493 15.0666 12.2502 15.5581 10.9999 15.5581Z"
+                                        fill="#373741"
+                                    />
+                                </svg>
+                                <span class="contact-link-text"
+                                    >Kyiv, Ukraine</span
+                                >
+                            </p>
+                        </li>
                     </ul>
                 </section>
 
                 <section class="aside-tech-skills">
-                    <h2>TECH SKILLS</h2>
+                    <h2 class="aside-title">TECH SKILLS</h2>
 
-                    <ul>
-                        <li><p>HTML 5</p></li>
-                        <li><p>HTML 5</p></li>
-                        <li><p>HTML 5</p></li>
-                        <li><p>HTML 5</p></li>
-                        <li><p>HTML 5</p></li>
-                        <li><p>HTML 5</p></li>
+                    <ul class="aside-skills-list">
+                        <li><p class="aside-list-text">HTML 5</p></li>
+                        <li><p class="aside-list-text">HTML 5</p></li>
+                        <li><p class="aside-list-text">HTML 5</p></li>
+                        <li><p class="aside-list-text">HTML 5</p></li>
+                        <li><p class="aside-list-text">HTML 5</p></li>
+                        <li><p class="aside-list-text">HTML 5</p></li>
                     </ul>
                 </section>
 
                 <section class="aside-soft-skills">
-                    <h2>SOFT SKILLS</h2>
+                    <h2 class="aside-title">SOFT SKILLS</h2>
 
-                    <ul>
-                        <li><p>Teamwork</p></li>
-                        <li><p>HTML 5</p></li>
-                        <li><p>HTML 5</p></li>
-                        <li><p>HTML 5</p></li>
-                        <li><p>HTML 5</p></li>
-                        <li><p>HTML 5</p></li>
+                    <ul class="aside-skills-list">
+                        <li><p class="aside-list-text">Teamwork</p></li>
+                        <li><p class="aside-list-text">Teamwork</p></li>
+                        <li><p class="aside-list-text">Teamwork</p></li>
+                        <li><p class="aside-list-text">Teamwork</p></li>
+                        <li><p class="aside-list-text">Teamwork</p></li>
                     </ul>
                 </section>
 
                 <section class="aside-soft-skills">
-                    <h2>LANGUAGE SKILLS</h2>
+                    <h2 class="aside-title">LANGUAGE SKILLS</h2>
 
-                    <ul>
-                        <li><p>Ukrainian — native</p></li>
-                        <li><p>russian — native</p></li>
-                        <li><p>English — intermediate B1</p></li>
+                    <ul class="aside-skills-list aside-language-list">
+                        <li>
+                            <p class="aside-list-text">Ukrainian — native</p>
+                        </li>
+                        <li>
+                            <p class="aside-list-text">russian — native</p>
+                        </li>
+                        <li>
+                            <p class="aside-list-text">
+                                English — intermediate B1
+                            </p>
+                        </li>
                     </ul>
                 </section>
             </aside>
 
             <div class="grid-container">
-                <section class="hero-section">
+                <section class="hero-section section">
                     <div class="container">
                         <h1 class="hero-title">Perepelytsya Dmytro</h1>
                         <h2 class="hero-position">
@@ -92,7 +214,7 @@
                     </div>
                 </section>
 
-                <section class="projects-section">
+                <section class="projects-section section">
                     <div class="title-container">
                         <h2 class="projecects-section-title">Projects</h2>
                     </div>
@@ -109,7 +231,7 @@
                     </ul>
                 </section>
 
-                <section class="work-section">
+                <section class="work-section section">
                     <div class="title-container">
                         <h2 class="work-section-title">WORK EXPERIENCE</h2>
                     </div>
@@ -140,35 +262,37 @@
 
                     <h3>Achivments:</h3>
 
-                    <ul>
-                      <li>
-                          <p class="work-responsobilities-text">
-                              opened credit cards, deposits, cash loans to
-                              clients on cold and warm bases
-                          </p>
-                      </li>
-                  </ul>
+                    <ul class="work-section-list">
+                        <li>
+                            <p class="work-responsobilities-text">
+                                opened credit cards, deposits, cash loans to
+                                clients on cold and warm bases
+                            </p>
+                        </li>
+                    </ul>
                 </section>
 
-                <section class="education-section">
+                <section class="education-section section">
                     <div class="title-container">
                         <h2 class="education-title">EDUCATION</h2>
                     </div>
 
                     <p class="eductaion-item">
-                        Kyiv National University of Construction and
-                        Architecture |2013-2018
+                        Taras Shevchenko <br />
+                        National University of Kyiv <br />
+                        125 Cybersecurity | 2022 - now
                     </p>
                 </section>
 
-                <section class="education-section">
+                <section class="education-section section">
                     <div class="title-container">
                         <h2 class="education-title">ADDITIONAL EDUCATION</h2>
                     </div>
 
                     <p class="eductaion-item">
-                        IT School GoIT Full stack developer July 2020 - July
-                        2021 |Ukraine
+                        IT School GoIT <br />
+                        Full stack developer <br />
+                        August 2022 - now | Ukraine
                     </p>
                 </section>
             </div>
