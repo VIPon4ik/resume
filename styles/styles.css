@@ -165,9 +165,12 @@ svg {
 .work-responsobilities-text {
   text-indent: 16px;
 }
+.education-section {
+  padding-right: 180px;
+}
 
 .education-title {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 /**
