@@ -57,6 +57,7 @@ h1,h2,h3 {
   font-size: 16px;
   font-weight: 800;
   color: var(--second-color);
+  text-transform: uppercase;
 }
 
 h3 {
@@ -135,9 +136,13 @@ svg {
 .projects-list li:not(:last-child) {
   margin-bottom: 16px;
 }
-.project-text {
-  font-size: 14px;
+.project-link-span {
+  color: var(--main-color);
+  font-weight: 800;
 }
+/* .project-text {
+  font-size: 16px;
+} */
 
 .work-period {
   margin-bottom: 20px;
@@ -159,6 +164,10 @@ svg {
 }
 .work-responsobilities-text {
   text-indent: 16px;
+}
+
+.education-title {
+  font-weight: 800;
 }
 
 /**
@@ -217,19 +226,19 @@ svg {
   bottom: 0px;
   left: 0px;
 
-  height: 2px;
+  height: 1px;
   opacity: 0.7;
   background-color: var(--main-color);
 
   transition: all 0.25s ease-in-out;
-  transform: scale(0);
+  transform: scale(1);
   transform-origin: center;
 }
 
-.contact-link:hover .contact-link-text::after,
+/* .contact-link:hover .contact-link-text::after,
 .contact-link:active .contact-link-text::after {
   transform: scale(1);
-}
+} */
 
 .aside-skills-list {
   margin-left: 20px;
