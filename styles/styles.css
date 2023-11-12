@@ -107,7 +107,7 @@ svg {
 
 /* Hero section */
 .container {
-  padding: 60px 60px 20px 48px;
+  padding: 40px 60px 20px 48px;
 }
 
 .hero-section {
@@ -134,7 +134,7 @@ svg {
   color: var(--second-color);
 }
 .projects-list li:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .project-link-span {
   color: var(--main-color);
