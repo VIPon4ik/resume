@@ -23,10 +23,10 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 460px 740px;
+  grid-template-columns: 460px 800px;
   grid-template-areas: "aside main";
   background-color: var(--background-color);
-  width: 1200px;
+  width: 1260px;
   margin: 0 auto;
 
   border-bottom-right-radius: 10px;
@@ -85,7 +85,7 @@ a {
 .title-container,
 .aside-title {
   display: flex;
-  width: 560px;
+  width: 580px;
   padding: 6px 20px;
   align-items: center;
   gap: 8px;
@@ -135,7 +135,7 @@ svg {
 }
 /* Projects section */
 .projects-section {
-  padding-right: 140px;
+  padding-right: 160px;
 }
 
 .projects-list li:not(:last-child) {
@@ -185,7 +185,7 @@ svg {
 */
 
 .aside-section {
-  padding: 80px 60px;
+  padding: 40px 60px 10px 60px;
 }
 
 .avatar {
