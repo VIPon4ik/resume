@@ -247,7 +247,7 @@ svg {
   margin-left: 20px;
 
   display: grid;
-  grid-template-columns: 160px 160px;
+  grid-template-columns: 320px;
   row-gap: 4px;
 
   margin-bottom: 20px;
