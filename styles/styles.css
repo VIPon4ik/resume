@@ -85,7 +85,7 @@ a {
 .title-container,
 .aside-title {
   display: flex;
-  width: 500px;
+  width: 560px;
   padding: 6px 20px;
   align-items: center;
   gap: 8px;
@@ -133,6 +133,11 @@ svg {
 .hero-text {
   color: var(--second-color);
 }
+/* Projects section */
+.projects-section {
+  padding-right: 140px;
+}
+
 .projects-list li:not(:last-child) {
   margin-bottom: 12px;
 }
